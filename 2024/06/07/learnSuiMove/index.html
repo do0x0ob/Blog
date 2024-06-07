@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="d0x0b.sui">
+
+
+    <meta name="subtitle" content="Move on Sui Ryder">
+
+
+    <meta name="description" content="A Web3 Dev Just Starts Her Journey.">
+
+
+    <meta name="keywords" content="Web3 Move Developer">
+
+
+
+
+<title>我學 Move on Sui 語言的感想 | d0x0b_log</title>
+
+
+
+    <link rel="icon" href="/Blog/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/Blog/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/Blog/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.2.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/Blog/">
+          
+            d0x0b_log
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/Blog/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/Blog/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/Blog/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/Blog/tags/Move/">
+                            Move
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/Blog/tags/Sui/">
+                            Sui
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/Blog/tags/Blockchain/">
+                            Blockchain
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/Blog/tags/Smar-tContract/">
+                            Smar tContract
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                我學 Move on Sui 語言的感想
+            
+            
+        </div>
+        <span class="post-date">
+            Jun 7, 2024
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h2 id="我對-Move-語言的看法"><a href="#我對-Move-語言的看法" class="headerlink" title="我對 Move 語言的看法"></a>我對 Move 語言的看法</h2><ul>
+<li>冒號很多。</li>
+<li>跟 <code>Rust</code> 有點像，都有可變、引用的概念。</li>
+<li>據說要實現一樣的邏輯，相比於 <code>Solidity</code> 可以少寫很多行代碼。</li>
+<li>寫起來的代碼確實乾淨清爽，我滿喜歡這個語法風格的。</li>
+</ul>
+<h2 id="從開始學習到可以實現想要的邏輯需要多久時間？"><a href="#從開始學習到可以實現想要的邏輯需要多久時間？" class="headerlink" title="從開始學習到可以實現想要的邏輯需要多久時間？"></a>從開始學習到可以實現想要的邏輯需要多久時間？</h2><p>認真寫的話大概 1~2 個月吧。</p>
+<p>我有一搭沒一搭的學大概是在 2024 年 4 月開始的，5 月初參加了官方舉辦的開發者活動，為期 3 天有講師帶領。講師是現役 Protocol 的開發者，寫得很熟練、沒有太多程式基礎的話要跟上不容易。主要講解也是偏重 <code>Move</code> 本身，關於怎麼接入 dApp 就是大概帶到而已。</p>
+<p>由於 <code>Move</code> 本身就是設計為區塊鏈智能合約語言，本身的設計就自帶許多安全機制的判斷，因此寫起來並不會花太多時間。真正困擾人的還是在於鏈上數據的接入，使用哪些 RPC 方法獲取鏈上資訊是最佳實踐等等問題，必須要自己完整寫過一個 dApp 之後才會體會到業務邏輯最好盡可能地貼近前端設計，才不會有太多不需要的複雜關連需要處裡。</p>
+<h3 id="看一下一個水龍頭代幣的範例"><a href="#看一下一個水龍頭代幣的範例" class="headerlink" title="看一下一個水龍頭代幣的範例"></a>看一下一個水龍頭代幣的範例</h3><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">module faucet_eyes::faucet_eyes &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">use</span> sui::coin::&#123;<span class="keyword">Self</span>, TreasuryCap&#125;;</span><br><span class="line">    <span class="keyword">use</span> sui::url::&#123;new_unsafe&#125;;</span><br><span class="line"></span><br><span class="line">    public <span class="keyword">struct</span> <span class="title class_">FAUCET_EYES</span> has drop &#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">#[allow(lint(share_owned))]</span></span><br><span class="line">    fun <span class="title function_ invoke__">init</span>(witness: FAUCET_EYES, ctx: &amp;<span class="keyword">mut</span> sui::tx_context::TxContext) &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="variable">url_obj</span> = <span class="title function_ invoke__">new_unsafe</span>(std::ascii::<span class="title function_ invoke__">string</span>(<span class="string">b&quot;https://github.com/do0x0ob/Sui-Devnet-faucet_coin-EYES/blob/main/faucet_eyes/token_img/eyes.png?raw=true&quot;</span>));</span><br><span class="line">        <span class="keyword">let</span> (treasury_cap, meta) = coin::<span class="title function_ invoke__">create_currency</span> (</span><br><span class="line">            witness,</span><br><span class="line">            <span class="number">9</span>,</span><br><span class="line">            <span class="string">b&quot;EYES_Faucet&quot;</span>,</span><br><span class="line">            <span class="string">b&quot;EYES&quot;</span>,</span><br><span class="line">            <span class="string">b&quot;a Sui devnet FaucetCoin for 2024 hackerthon testuse&quot;</span>,</span><br><span class="line">            option::<span class="title function_ invoke__">some</span>(url_obj),</span><br><span class="line">            ctx</span><br><span class="line">        );</span><br><span class="line">        transfer::<span class="title function_ invoke__">public_freeze_object</span>(meta);</span><br><span class="line">        transfer::<span class="title function_ invoke__">public_share_object</span>(treasury_cap);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public entry fun <span class="title function_ invoke__">mint</span>(</span><br><span class="line">        treasury_cap: &amp;<span class="keyword">mut</span> TreasuryCap&lt;FAUCET_EYES&gt;,</span><br><span class="line">        amount: <span class="type">u64</span>,</span><br><span class="line">        recipient: address,</span><br><span class="line">        ctx: &amp;<span class="keyword">mut</span> TxContext</span><br><span class="line">    ) &#123;</span><br><span class="line">        coin::<span class="title function_ invoke__">mint_and_transfer</span>(treasury_cap, amount, recipient, ctx);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>發水龍頭幣的代碼，就是這麼簡單。我們可以拆分成三個步驟：</strong></p>
+<ol>
+<li>定義一次性見證者的 struct，主要是為了確保這個代筆只會被生成一次，基本上算是固定用法。</li>
+<li>定義一個 <code>init</code> 方法，發布合約時會自動執行一次，傳入 <code>witness</code>。<ul>
+<li>執行完 <code>init</code> 方法之後 <code>witness</code> 會被丟棄，因為 <code>struct</code> 中定義了 <code>drop</code> 能力。 </li>
+<li>因此 <code>witness</code> 只用一次後從此就消失了，永遠缺少了再次調用的所需參數。</li>
+<li>藉這個機制來保證只會執行一次。</li>
+</ul>
+</li>
+<li>定義一個一般的 <code>mint funciton</code> 傳入 <code>treasury_cap</code>, <code>amount</code>,<code>recipient</code> 三個參數來鑄造新幣。<ul>
+<li>ctx 是交易上下文，由 <code>Sui Network</code>處理，因此有這個參數的 <code>Function</code> 都可以直接不傳參，無視這個欄位。</li>
+<li>執行的邏輯是透過 <code>Sui</code> 內建的 <code>mint_and_transfer</code> 函數，將鑄造出來的幣轉移給指定的地址。</li>
+</ul>
+</li>
+</ol>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/Blog/2024/06/07/suiOverflow/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+                d0x0b.sui
+                <br>
+            
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
