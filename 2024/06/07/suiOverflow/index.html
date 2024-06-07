@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="d0x0b.sui">
+
+
+
+    <meta name="description" content="A Web3 Dev Just Starts Her Journey.">
+
+
+    <meta name="keywords" content="Web3 Move Developer">
+
+
+
+
+<title>2024 SuiOverflow Hackathon 參賽心得 | d0x0b_log</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.2.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            d0x0b_log
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Hackathon/">
+                            Hackathon
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Sui/">
+                            Sui
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Blockchain/">
+                            Blockchain
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                2024 SuiOverflow Hackathon 參賽心得
+            
+            
+        </div>
+        <span class="post-date">
+            Jun 7, 2024
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="/image/article_cover/SuiBrandLogo.svg" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h2 id="我的背景以及為何我會參加-Hackathon"><a href="#我的背景以及為何我會參加-Hackathon" class="headerlink" title="我的背景以及為何我會參加 Hackathon?"></a>我的背景以及為何我會參加 Hackathon?</h2><p>其實早在大約 2019 年時我從海外離職回到台灣時，就有過想要參加黑客松的想法了。<br>但那個時候因為剛回台灣不熟悉就業環境，我給自己的目標其實很簡單：</p>
+<ol>
+<li>在台灣找到一個技術端的工作。</li>
+<li>多碰一些跟開發相關的事情。</li>
+</ol>
+<p>上面這兩個目標在 2019 年很快的都被實現了，回到台灣我繼續做測試工程師、也在原本熟悉的測試領域上引入了一些自動化測試的框架，觸碰了一些代碼、做著做著又過了一個 5 年，中間遇到疫情等等重大事件，參加黑客松這個想法也不了了之。</p>
+<p>曾經我一直以為我會繼續做測試下去直到老死。</p>
+<p>雖然潛意識中是心有不甘的，因為一直以來我總有要 Build 屬於自己的專案的念頭。直到去年底離職後，才開始有時間和空間直面自己心裡所想做的事情。後來因緣際會下在 <code>Sui</code> 所舉辦的開發者活動中認識了現在的隊友，於是開始了本次的 <code>Hackathon</code> 之旅。</p>
+<h2 id="參加-Hackathon-最大的收獲"><a href="#參加-Hackathon-最大的收獲" class="headerlink" title="參加 Hackathon 最大的收獲"></a>參加 Hackathon 最大的收獲</h2><p>收獲最多莫過於心理上的成就感，畢竟終於實現了我想要「做一個自己的產品」的想法。</p>
+<p>中間的過程其實滿辛苦的，我們這一組雖說有 5 個人，但有寫程式經驗的只有我和另外一位工程師。我過去是測試的角色，產品、PM、開發的角色都略懂但是並不精通。</p>
+<p>這次黑客松團隊中，我主要的角色是編寫合約並串接到前端 dApp，在不熟悉智能合約語言的情況下從 5&#x2F;10 左右才開始認真學習 Move，並在 5&#x2F;31 號將完成的出版交付出去，學習曲線其實是非常陡峭的，大概在交件截止前的一週，連續幾天都是寫到天亮才休息。</p>
+<p>雖然非常辛苦，但在中間學習到的東西也不少：</p>
+<ol>
+<li>用 <code>Move</code> 語言編寫一個任務版的 CRUD 功能。</li>
+<li>將鏈上的合約函數串到 <code>next.js</code> 框架做的 dApp 前端，完成業務邏輯的閉環。</li>
+<li>自己設計產品的使用流程、世界觀、特色功能、前端介面的美術風格。</li>
+<li>做簡報、寫 README 來表達專案的特色和理念。</li>
+</ol>
+<p>雖然最終的產品功能比較陽春、很多預想要有的功能也沒有實現；但對我來說這就是好的開始了。<br>對於這個專案我還有很多其他的想法想要實現，不管這次有沒有獲得獎金、名次；我都會繼續發展下去，直到我發現更好玩的 IDEA 並決定投入為止。</p>
+<h2 id="Project-Info"><a href="#Project-Info" class="headerlink" title="Project Info"></a>Project Info</h2><blockquote>
+<p>目前在 SuiDevnet 上有部署合約、尚未更新 Testnet，Devnet 每週會清理數據，因此可能會無法使用。專案更新至 Testnet 時會更新說明。</p>
+</blockquote>
+<p><strong>我們的公開任務模型設計具有以下特點：</strong></p>
+<ol>
+<li>追求透明和開放：任何人都可以提交他們的工作，無需獲得許可。認證通過的作品將會使用 Sui 的 <code>Freeze Object</code> 功能在鏈上凍結和保存。</li>
+<li>鏈上合約與直接獎金分配：參與者可以在開始任務前確認獎金的存在並通過智能合約的自動獎勵分配機制確保分配金額的準確性。</li>
+</ol>
+<hr>
+<p><strong>Links</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://frensuipport.vercel.app/">Fren Suipport WebSite</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/u2789011/suiHackthon">GitHub Repo</a></li>
+</ul>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2024/06/07/hello-world/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+                d0x0b.sui
+                <br>
+            
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
